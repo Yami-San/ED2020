@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author samaniw
+ * @author usuario
  */
 public class Node {
     private int data;

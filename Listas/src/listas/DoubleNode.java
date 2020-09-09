@@ -7,7 +7,7 @@ package listas;
 
 /**
  *
- * @author samaniw
+ * @author usuario
  */
 public class DoubleNode {
     private int data;
@@ -68,5 +68,4 @@ public class DoubleNode {
     public void setPreviosNode(DoubleNode previosNode) {
         this.previosNode = previosNode;
     }
-    
 }

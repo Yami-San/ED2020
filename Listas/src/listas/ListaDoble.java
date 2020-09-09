@@ -7,10 +7,9 @@ package listas;
 
 /**
  *
- * @author samaniw
+ * @author usuario
  */
 public class ListaDoble {
-
     DoubleNode head, tail;
 
     public ListaDoble() {
@@ -106,5 +105,52 @@ public class ListaDoble {
             }
         }
         return data;
+    }
+    /*
+    @Retorna true si el número entregado (d) existe en la lista, sino retorna false.
+    */
+    public boolean search(int d)
+    {
+        boolean value = false;
+        if(isEmpty())
+        {
+            return value;
+        }
+        else
+        {
+            DoubleNode current = head;
+            while (current != null)
+            {
+                if(current.getData() == d)
+                {
+                    value = true;
+                }
+                current = current.getNextNode();
+            }
+            return value;
+        }
+    }
+    
+    public void DeleteLast()
+    {
+        if (isEmpty()) {
+            System.out.println("Lista vacia");
+        } else if(head.getNextNode() == null)
+        {
+            head = null;
+        }
+        else 
+        {
+            DoubleNode current = head;
+            while (current != null) {
+                if(current.getNextNode() == null)
+                {
+                    current = current.getPreviosNode();
+                    current.setNextNode(null);
+                    break;
+                }
+                current = current.getNextNode();
+            }
+        }
     }
 }

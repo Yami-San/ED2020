@@ -7,16 +7,16 @@ package listas;
 
 /**
  *
- * @author samaniw
+ * @author usuario
  */
 public class ListaCircularSimple {
-    
     private Node head, tail;
 
     public ListaCircularSimple() {
         head = tail = null;
         
     }
+    
     
     private boolean isEmpty() {
         return head == null;
@@ -54,4 +54,73 @@ public class ListaCircularSimple {
         return data;
     }
     
+    public void delete()
+    {
+        if(isEmpty())
+        {
+            System.out.println("Lista vacia");
+        }
+        else if(head == tail)
+        {
+            head = tail = null;
+        }
+        else
+        {
+            head = head.getNextNode();
+            tail.setNextNode(head);
+        }
+    }
+    
+    public void LinkedList(ListaCircularSimple list)
+    {
+        if(list.isEmpty() && isEmpty())
+        {
+            System.out.println("Listas vacias");
+        }
+        else if(list.isEmpty())
+        {
+            System.out.println("La lista de parametro esta vacia");
+        }
+        else if(isEmpty())
+        {
+            Node current = list.head;
+            Node current2 = head;
+            do
+            {
+                if(current == list.head)
+                {
+                    head = current;
+                }
+                else
+                {
+                    current2 = current;
+                }
+                current2 = current2.getNextNode();
+                current = current.getNextNode();
+            } while(current != list.head);
+        }
+        else
+        {
+            Node current = head;
+            do
+            {
+                if(current.getNextNode() == head)
+                {
+                    break;
+                }
+                current = current.getNextNode();
+            } while(current != head);
+            Node current2 = list.head;
+            do
+            {
+                if(current2.getNextNode() == list.head)
+                {
+                    break;
+                }
+                current2 = current2.getNextNode();
+            } while(current2 != list.head);
+            current.setNextNode(list.head);
+            current2.setNextNode(head);
+        }
+    }
 }
