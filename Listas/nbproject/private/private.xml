@@ -4,11 +4,16 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/Node.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/PilaDoble.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/ListaDoble.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/GenericNode.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/Listas.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/DoubleNode.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/LinkedStack.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/IStack.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/ListaCircularSimple.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/miLista.java</file>
+            <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/ColaEnlazada.java</file>
             <file>file:/C:/Users/usuario/Documents/NetBeansProjects/Listas/src/listas/ListaCircularDoble.java</file>
         </group>
     </open-files>

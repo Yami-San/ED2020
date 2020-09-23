@@ -9,40 +9,45 @@ package listas;
  *
  * @author usuario
  */
-public class Node {
-    private int data;
-    private Node nextNode;
+public class GenericNode<T> {
     
-    public Node(int data){
-        this.data = data;
+    private T data;
+    private GenericNode<T> nextNode;
+
+    public GenericNode(T d) {
+        
+        data = d;
         nextNode = null;
+        
     }
+      
 
     /**
      * @return the data
      */
-    public int getData() {
+    public T getData() {
         return data;
     }
 
     /**
      * @param data the data to set
      */
-    public void setData(int data) {
+    public void setData(T data) {
         this.data = data;
     }
 
     /**
      * @return the nextNode
      */
-    public Node getNextNode() {
+    public GenericNode<T> getNextNode() {
         return nextNode;
     }
 
     /**
      * @param nextNode the nextNode to set
      */
-    public void setNextNode(Node nextNode) {
+    public void setNextNode(GenericNode<T> nextNode) {
         this.nextNode = nextNode;
     }
+    
 }
